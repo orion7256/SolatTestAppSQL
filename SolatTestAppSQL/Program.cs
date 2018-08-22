@@ -11,10 +11,8 @@ namespace SolatTestAppSQL
     {
         static void Main(string[] args)
         {
-            Sql.open();
-            Console.WriteLine(Sql.s.err);
-            Console.ReadKey();
-            Sql.exit();
+            Sql_Connector.open();
+            Interface I = new Interface();
         }
     }
 }
