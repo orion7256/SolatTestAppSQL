@@ -4,12 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SolatTestAppSQL
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Sql.open();
+            Console.WriteLine(Sql.s.err);
+            Console.ReadKey();
+            Sql.exit();
         }
     }
 }
